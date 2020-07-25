@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>쇼핑몰</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        img {
+            border: 6px solid beige;
+            width: 500px;
+        }
+
+        h1 {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        h1, span {
+            display: inline;
+        }
+
+        .order_button {
+            text-align: center;
+            color: lightgray;
+        }
+    </style>
+    <script>
+        function ordercomplete() {
+            alert('주문이 완료 되었습니다');
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="product_image">
+        <img src="https://www.protexinvet.com/userfiles/image/cute-2500929_1920_(1).jpg">
+    </div>
+    <div class="product_title">
+        <br>
+        <h1>토끼</h1>
+        <span>가격: 1,000,000원/마리</span>
+    </div>
+    <div class="product_description">
+        <p>귀여운 토끼 비싼 토끼 귀여운 만큼 비싼 토끼</p>
+        <br>
+    </div>
+    <div class="order_title">
+        <h1>주문하기</h1>
+    </div>
+    <div class="order_form">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">주문자 성함</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="김철수">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">수량</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">주소</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="성동구 옥수동">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">전화번호</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="010-1234-5678">
+        </div>
+    </div>
+    <div class="order_button">
+        <button onclick="ordercomplete()" type="button" class="btn btn-primary">주문하기</button>
+    </div>
+</div>
+</body>
+</html>
